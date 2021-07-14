@@ -16,6 +16,10 @@
     margin-top: 2rem;
 }
 
+.responsive {
+    max-width: 768px;
+}
+
 body {
     background-image: url('foto.jpg');
     background-position: center;
