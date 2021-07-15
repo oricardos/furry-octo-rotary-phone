@@ -8,73 +8,215 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/3b48aa32f5.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
-    <title>Olá, mundo!</title>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Obrigado</title>
 </head>
 
 <body>
-    <div class="main-content py-64">
-        <div class="container text-center responsive">
-            <!-- header -->
-            <header class="">
-                <h1>Obrigado!</h1>
-            </header>
+<div class="main-content py-64">
+    <div class="container text-center responsive">
+        <!-- header -->
+        <header class="">
+            <h1>Obrigado!</h1>
+        </header>
 
-            <!-- embed video -->
-            <div class="embed-responsive embed-responsive-16by9 my-32">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/SvZO9TbIRUo"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-            </div>
-
-            <!-- share icon -->
-            <i class="fas fa-share-alt"></i>
-
-            <section class="playlist mt-32">
-                <header class="d-flex"> 
-                    <h3 class="mr-3">Criar Nova Playlist</h3>
-                <i class="fas fa-info-circle text-primary"></i>
-                </header>
-                <main class="playlists">
-
-                </main>
-            </section>
-
-            <section class="social mt-32">
-                <header class="text-left">
-                    <h3>Siga nossas redes sociais</h3>
-                </header>
-
-                <div class="social-links mb-5">
-                    <ul class="d-flex">
-                        <li><a href="#"><i class="fab fa-youtube youtube"></i></a></li>
-                        <li><a href=""><i class="fab fa-instagram instagram"></i></a></li>
-                        <li><a href=""><i class="fab fa-twitter twitter"></i></a></li>
-                        <li><a href=""><i class="fab fa-facebook-f facebook"></i></a></li>
-                    </ul>
-                </div>
-            </section>
+        <!-- embed video -->
+        <div class="embed-responsive embed-responsive-16by9 my-32">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/U7Y3t1Rg6dE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
 
-        <section class="privacy-policy text-right mt-32">
-            <span>POLÍTICA DE PRIVACIDADE</span>
+        <!-- share icon -->
+        <i class="fas fa-share-alt share-icon"></i>
+
+        <section class="playlist-section mt-32">
+            <header class="d-flex mb-3">
+                <h3 class="mr-3 mb-0">Criar Nova Playlist</h3>
+                    <i class="fas fa-info-circle text-primary" data-toggle="tooltip" data-placement="top" title="Descrição"></i>
+            </header>
+            <main class="playlists d-flex flex-column">
+                <div class="playlist d-flex">
+                    <div class="d-flex w-100">
+                        <img src="https://i.scdn.co/image/ab67616d00001e0275c81d5ac9a862a91237e263"
+                                class="playlist-img" alt="">
+                        <div class="d-flex flex-column playlist-text">
+                            <span class="playlist-artist">Fernanda Madaloni</span>
+                            <span class="playlist-name text-muted">Adoração</span>
+                        </div>
+                    </div>
+                    <div class="playlist-save">
+                        <button class="playlist-save-btn" data-save="save" id="1">
+                            <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
+                            <span class="save">Salvar</span>
+                            <i class="far fa-check-circle"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="playlist d-flex">
+                    <div class="d-flex w-100">
+                        <img src="https://seeded-session-images.scdn.co/v1/img/artist/2tswayWsUGjUwpvN8KRwuN/pt"
+                                class="playlist-img" alt="">
+                        <div class="d-flex flex-column playlist-text">
+                            <span class="playlist-artist">Morada</span>
+                            <span class="playlist-name text-muted">Rádio</span>
+                        </div>
+                    </div>
+                    <div class="playlist-save">
+                        <button class="playlist-save-btn" data-save="save" id="2">
+                            <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
+                            <span class="save">Salvar</span>
+                            <i class="far fa-check-circle"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="playlist d-flex">
+                    <div class="d-flex w-100">
+                        <img src="https://dailymix-images.scdn.co/v2/img/ab6761610000e5eba4ab8b2114b45b414c453a4e/3/pt/large"
+                                class="playlist-img" alt="">
+                        <div class="d-flex flex-column playlist-text">
+                            <span class="playlist-artist">Oficina G3</span>
+                            <span class="playlist-name text-muted">Rádio</span>
+                        </div>
+                    </div>
+                    <div class="playlist-save">
+                        <button class="playlist-save-btn" data-save="save" id="3">
+                            <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
+                            <span class="save">Salvar</span>
+                            <i class="far fa-check-circle"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="playlist d-flex">
+                    <div class="d-flex w-100">
+                        <img src="https://i.scdn.co/image/ab67706c0000bebbab2cc4d8849645591ff65155"
+                                class="playlist-img" alt="">
+                        <div class="d-flex flex-column playlist-text">
+                            <span class="playlist-artist">TOP 50 Gospel Onimusicasdfasdf</span>
+                            <span class="playlist-name text-muted">Playlist</span>
+                        </div>
+                    </div>
+                    <div class="playlist-save">
+                        <button class="playlist-save-btn" data-save="save" id="4">
+                            <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
+                            <span class="save">Salvar</span>
+                            <i class="far fa-check-circle"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="playlist d-flex">
+                    <div class="d-flex w-100">
+                        <img src="https://i.scdn.co/image/ab67706c0000bebbab2cc4d8849645591ff65155"
+                                class="playlist-img" alt="">
+                        <div class="d-flex flex-column playlist-text">
+                            <span class="playlist-artist">TOP 50 Gospel Onimusicasdfasdf</span>
+                            <span class="playlist-name text-muted">Playlist</span>
+                        </div>
+                    </div>
+                    <div class="playlist-save">
+                        <button class="playlist-save-btn" data-save="save" id="4">
+                            <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
+                            <span class="save">Salvar</span>
+                            <i class="far fa-check-circle"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="playlist d-flex">
+                    <div class="d-flex w-100">
+                        <img src="https://i.scdn.co/image/ab67706c0000bebbab2cc4d8849645591ff65155"
+                                class="playlist-img" alt="">
+                        <div class="d-flex flex-column playlist-text">
+                            <span class="playlist-artist">TOP 50 Gospel Onimusicasdfasdf</span>
+                            <span class="playlist-name text-muted">Playlist</span>
+                        </div>
+                    </div>
+                    <div class="playlist-save">
+                        <button class="playlist-save-btn" data-save="save" id="4">
+                            <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
+                            <span class="save">Salvar</span>
+                            <i class="far fa-check-circle"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="playlist d-flex">
+                    <div class="d-flex w-100">
+                        <img src="https://i.scdn.co/image/ab67706c0000bebbab2cc4d8849645591ff65155"
+                                class="playlist-img" alt="">
+                        <div class="d-flex flex-column playlist-text">
+                            <span class="playlist-artist">TOP 50 Gospel Onimusicasdfasdf</span>
+                            <span class="playlist-name text-muted">Playlist</span>
+                        </div>
+                    </div>
+                    <div class="playlist-save">
+                        <button class="playlist-save-btn" data-save="save" id="4">
+                            <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
+                            <span class="save">Salvar</span>
+                            <i class="far fa-check-circle"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="playlist d-flex">
+                    <div class="d-flex w-100">
+                        <img src="https://i.scdn.co/image/ab67706c0000bebbab2cc4d8849645591ff65155"
+                                class="playlist-img" alt="">
+                        <div class="d-flex flex-column playlist-text">
+                            <span class="playlist-artist">TOP 50 Gospel Onimusicasdfasdf</span>
+                            <span class="playlist-name text-muted">Playlist</span>
+                        </div>
+                    </div>
+                    <div class="playlist-save">
+                        <button class="playlist-save-btn" data-save="save" id="4">
+                            <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
+                            <span class="save">Salvar</span>
+                            <i class="far fa-check-circle"></i>
+                        </button>
+                    </div>
+                </div>
+                
+            </main>
+        </section>
+
+        <section class="social mt-32">
+            <header class="text-left">
+                <h3>Siga nossas redes sociais</h3>
+            </header>
+
+            <div class="social-links mb-5 mt-3">
+                <ul class="d-flex">
+                    <li><a href="#"><i class="fab fa-youtube youtube"></i></a></li>
+                    <li><a href=""><i class="fab fa-instagram instagram"></i></a></li>
+                    <li><a href=""><i class="fab fa-twitter twitter"></i></a></li>
+                    <li><a href=""><i class="fab fa-facebook-f facebook"></i></a></li>
+                </ul>
+            </div>
         </section>
     </div>
 
-    <!-- JavaScript (Opcional) -->
-    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    <section class="privacy-policy text-right mt-32">
+        <span>POLÍTICA DE PRIVACIDADE</span>
+    </section>
+</div>
+
+<!-- JavaScript (Opcional) -->
+<!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
         integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
         crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
+
+        <script type="module" src="script.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,153 @@
+@import 'loading.css';
+@import 'scrollbar.css';
+
+/* GENERAL */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.py-64 {
+    padding: 4rem 0;
+}
+
+.my-32 {
+    margin: 2rem 0;
+}
+
+.mt-32 {
+    margin-top: 2rem;
+}
+
+.responsive {
+    max-width: 768px;
+}
+/* END GENERAL*/
+
+body {
+    background-image: url('../foto.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #FFF;
+}
+
+.main-content {
+    backdrop-filter: blur(5px);
+    height: 100%;
+}
+
+
+/* PLAYLISTS */
+section.playlist-section header {
+    align-items: center;
+}
+
+
+main.playlists {    
+    padding: .5rem 0;
+    background-color: #121212;
+    border-radius: 8px;
+}
+
+.playlist img.playlist-img {
+    width: 60px;
+    margin-right: 1rem;
+}
+
+.playlist .playlist-artist,
+.playlist .playlist-name {
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    white-space: unset;
+    word-break: break-all;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.playlist span.text-muted {
+    font-size: 14px;
+}
+
+.playlist {
+    padding: 8px 16px;
+}
+
+.playlist .playlist-text {
+    text-align: left;
+    justify-content: center;
+}
+
+.playlist-save {
+    align-self: center;
+    }
+
+.playlist-save-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1DB954;
+    /* padding: .5rem 1rem; */
+    width: 80px;
+    height: 40px;
+    color: #FFF;
+    font-weight: bold;
+    border: none;
+    border-radius: .275rem;
+}
+
+.playlist-save-btn:focus {
+    outline: none;
+}
+
+.playlist-save-btn i {
+    display: none;
+    font-size: 1.3rem
+}
+
+/* END PLAYLISTS */
+
+
+/* ICONS & SOCIAL LINKS */
+
+.share-icon {
+    font-size: 1.5rem;
+}
+
+.fa-info-circle {
+    background-color: #FFF;
+    border-radius: 50%;
+}
+
+.social-links ul {
+    list-style: none;
+    justify-content: space-between;
+}
+
+.social-links ul li a i {
+    font-size: 1.5rem;
+}
+
+.youtube, .youtube:hover {
+    color: #CB0200;
+}
+
+.instagram, .instagram:hover {
+    color: #FFF;
+}
+
+.twitter, .twitter:hover {
+    color: #1DA1F2;
+}
+
+.facebook, .facebook:hover {
+    color: #1777F2;
+}
+
+.privacy-policy span {
+    font-weight: bold;
+    padding-right: 1rem;
+}
